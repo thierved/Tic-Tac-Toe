@@ -1,0 +1,21 @@
+.container {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  background-color: #eee; }
+  .container h1 {
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center; }
+  .container .cell-container {
+    width: 70%;
+    margin: 1rem auto;
+    background-color: #eee; }
+    .container .cell-container .cell {
+      width: 32%;
+      height: 120px;
+      float: right;
+      background-color: #ff5ff5;
+      border: 1px solid #eee; }
