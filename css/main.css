@@ -1,21 +1,40 @@
 .container {
-  width: 95%;
-  height: 100vh;
-  margin: auto;
-  background-color: #eee; }
-  .container h1 {
-    margin: 0;
-    padding: 2rem 0;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center; }
-  .container .cell-container {
-    width: 70%;
-    margin: 1rem auto;
-    background-color: #eee; }
-    .container .cell-container .cell {
-      width: 32%;
-      height: 120px;
-      float: right;
-      background-color: #ff5ff5;
-      border: 1px solid #eee; }
+  box-sizing: border-box;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: #575757;  
+}
+.container h1 {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+.cell-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgb(163, 157, 157);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+  width: 100%;
+}
+
+.cell {
+  width: 33%;
+  height: 100px;
+  margin: 0 5px;
+  padding: 15px;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  border: #575757 solid 1px;
+}
+
+.cell:hover {
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
